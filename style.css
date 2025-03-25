@@ -1,16 +1,16 @@
 :root {
   --inter-font: "Inter", sans-serif;
-  --monserat-font: "Montserrat", sans-serif;
-  --poppins-font: "Poppins", sans-serif;
   --primary-white: #ffffff;
   --primary-grey: #d0d0d0;
-  --primary-neon: #cbff2f;
+  --primary-neon: #d1ff48;
   --secondary-neon: #c9ff00;
-  --accent-neon: #95c600;
+  --accent-neon: #82a712;
   --primary-black: #000000;
   --primary-black-blur: rgba(0, 0, 0, 0.532);
   --secondary-black: #0a0a0a;
+  --width-850: min(90%, 850px);
   --red-border: 2px solid red;
+  --grey-border: 0.1px solid rgb(29, 29, 29);
 }
 
 * {
@@ -21,10 +21,12 @@
 body {
   background: var(--primary-black);
   color: var(--primary-white);
+  font-family: var(--inter-font);
 }
 
 .navbar__container {
   position: fixed;
+  top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -46,7 +48,6 @@ body {
 }
 
 .navbar__logo p {
-  font-family: var(--inter-font);
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -57,7 +58,6 @@ body {
   align-items: center;
 }
 .navbar__links {
-  font-family: var(--poppins-font);
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -71,7 +71,7 @@ body {
   color: var(--primary-grey);
 }
 .navbar__links a.active {
-  color: var(--primary-neon);
+  color: var(--secondary-neon);
 }
 .navbar__socials {
   display: flex;
@@ -86,8 +86,145 @@ body {
   padding: 0.5rem;
   transition: 200ms ease-out;
 }
-.navbar__socials .icon:hover{
+.navbar__socials .icon:hover {
   color: var(--primary-neon);
+}
+.home__cont {
+  background-origin: padding-box;
+}
+.home__content {
+  margin-top: 5rem;
+  padding-top: 5.5rem;
+  text-align: center;
+  overflow: hidden;
+}
+.home__accent-txt {
+  background: var(--secondary-black);
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: max-content;
+  margin: auto;
+  margin-bottom: 1rem;
+  border: var(--grey-border);
+  box-shadow: 0 0 10px var(--secondary-black);
+}
+.home__header {
+  font-size: 3.5rem;
+  font-weight: 600;
+  width: var(--width-850);
+  margin: auto;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.home__sub-header {
+  font-size: 1.4rem;
+  color: var(--primary-white);
+  width: var(--width-850);
+  margin: auto;
+  margin-bottom: 3.5rem;
+  line-height: 1.5;
+}
+.home__cta-btn {
+  background: var(--primary-neon);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  transition: 200ms ease-out;
+  margin-bottom: 3rem;
+}
+.home__cta-btn a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--primary-black);
+}
+.home__cta-btn:hover {
+  background: var(--accent-neon);
+}
+.home__ratings span{
+  display: flex;
+  width: max-content;
+  gap: .4rem;
+  margin: auto;
+}
+.home__ratings span p{
+  font-size: 1rem;
+  color: var(--primary-grey);
+  padding-top: .2rem;
+}
+.home__ratings .icon{
+font-size: 1.5rem;
+color: var(--primary-neon);
+}
+.home__rating-txt{
+  color: var(--primary-grey);
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+.home__proof-cont{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: min(90%,800px);
+  margin: auto;
+  margin-bottom: 10rem;
+}
+.home__proof-cont .box{
+border-radius: 1rem;
+background: var(--secondary-black);
+padding: 1.5rem 1.4rem;
+border: var(--grey-border);
+text-align: left;
+color: var(--primary-grey);
+}
+.home__proof-cont .box h4{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.home__proof-cont .box p{
+font-size: 1rem;
+line-height: 1.5;
+
+}
+
+.home__slider {
+  display: flex;
+  gap: 2rem;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+#homeSlider .slide {
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  gap: 1rem;
+  color: var(--primary-white);
+}
+#homeSlider .slide :where(.icon, p){
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: slideLeft 20s linear infinite;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 
