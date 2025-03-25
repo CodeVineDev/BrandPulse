@@ -1,17 +1,97 @@
-:root{
- --inter-font: "Inter", sans-serif;
- --monserat-font: "Montserrat", sans-serif;
- --poppins-font: "Poppins", sans-serif;
- --primary-white:#FFFFFF;
- --primary-grey:#D0D0D0;
- --primary-neon:#cbff2f;
- --secondary-neon:#C9FF00;
- --accent-neon:#95c600;
- --primary-black:#000000;
- --secondary-black:#0a0a0a;
+:root {
+  --inter-font: "Inter", sans-serif;
+  --monserat-font: "Montserrat", sans-serif;
+  --poppins-font: "Poppins", sans-serif;
+  --primary-white: #ffffff;
+  --primary-grey: #d0d0d0;
+  --primary-neon: #cbff2f;
+  --secondary-neon: #c9ff00;
+  --accent-neon: #95c600;
+  --primary-black: #000000;
+  --primary-black-blur: rgba(0, 0, 0, 0.532);
+  --secondary-black: #0a0a0a;
+  --red-border: 2px solid red;
 }
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+body {
+  background: var(--primary-black);
+  color: var(--primary-white);
+}
+
+.navbar__container {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  background: var(--primary-black-blur);
+  backdrop-filter: blur(10px);
+}
+
+.navbar__logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.navbar__logo img {
+  width: 3rem;
+}
+
+.navbar__logo p {
+  font-family: var(--inter-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.navbar__container :where(ul) {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__links {
+  font-family: var(--poppins-font);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.navbar__links a {
+  text-decoration: none;
+  padding: 1rem;
+  color: var(--primary-white);
+  transition: 200ms ease-out;
+}
+.navbar__links a:hover {
+  color: var(--primary-grey);
+}
+.navbar__links a.active {
+  color: var(--primary-neon);
+}
+.navbar__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__socials .icon {
+  color: var(--primary-grey);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  transition: 200ms ease-out;
+}
+.navbar__socials .icon:hover{
+  color: var(--primary-neon);
+}
+
+
+/* <p>header nav (inter / Poppins / Montserrat)</p>
+<p>main headline (sans-serif, Inter Bold / Extra Bold or Poppins Bold)</p>
+<p>Subheading paragraph (inter / Poppins / Montserrat)</p>
+ */
