@@ -38,7 +38,7 @@ document.querySelectorAll('.text-domino').forEach(element => {
       gsap.to(words, {
         opacity: 1,
         y: 0,
-        stagger: 0.02,    // controls typing speed feel
+        stagger: 0.04,    // controls typing speed feel
         duration: 0.1,
         ease: 'expo.out' // cinematic smooth
       });
