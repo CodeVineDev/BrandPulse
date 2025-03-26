@@ -46,21 +46,21 @@ document.querySelectorAll('.text-domino').forEach(element => {
   });
 });
 
-// Animate boxes fade-up
-document.querySelectorAll('.fade-up').forEach(box => {
-  gsap.set(box, { opacity: 0, y: 40 });
+const groups = Array.from(document.querySelectorAll('.fade-up'))
+  .reduce((acc, el) => {
+    const top = el.offsetTop;
+    (acc[top] = acc[top] || []).push(el);
+    return acc;
+  }, {});
+
+Object.values(groups).forEach(row => {
+  gsap.set(row, { opacity: 0, y: 40 });
   ScrollTrigger.create({
-    trigger: box,
+    trigger: row[0],
     start: 'top 85%',
     once: true,
-    onEnter: () => {
-      gsap.to(box, {
-        opacity: 1,
-        y: 0,
-        duration: 0.6,
-        stagger: 2,
-        ease: 'power4.out'
-      });
-    }
+    onEnter: () => gsap.to(row, {
+      opacity: 1, y: 0, duration: 0.6, stagger: 0.4, ease: 'power4.out'
+    })
   });
 });
