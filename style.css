@@ -12,7 +12,7 @@
   --width-1200px: min(97%, 1200px);
   --red-border: 2px solid red;
   --transition: 400ms ease-in;
-  --one-rem-font: 1.1rem;
+  --one-rem-font: 1rem;
   --neon-border: 0.1px solid var(--primary-neon);
   --grey-border: 0.1px solid rgb(29, 29, 29);
 }
@@ -99,7 +99,7 @@ body {
 }
 .home__content {
   margin-top: 5rem;
-  padding-top: 5.5rem;
+  padding-top: 5rem;
   text-align: center;
   overflow: hidden;
 }
@@ -251,7 +251,7 @@ body {
 .service__cont {
   width: var(--width-1200px);
   margin: auto;
-  padding-top: 5.5rem;
+  padding-top: 5rem;
   margin-bottom: 5rem;
 }
 .service__accent-txt {
@@ -356,7 +356,7 @@ body {
   margin-bottom: 1rem;
 }
 .process__cont {
-  padding-top: 5.5rem;
+  padding-top: 5rem;
   margin-bottom: 5rem;
 }
 .process__accent-txt {
@@ -434,7 +434,7 @@ body {
   font-size: var(--one-rem-font);
 }
 .case-study__cont {
-  padding-top: 5.5rem;
+  padding-top: 5rem;
   margin-bottom: 5rem;
 }
 .case-study__accent-txt {
@@ -556,7 +556,7 @@ margin-bottom: 1rem;
   width: var(--width-1200px);
   margin: auto;
   margin-bottom: 5rem;
-  padding-top: 5.5rem;
+  padding-top: 5rem;
 }
 .testimonial__accent-txt{
   background: var(--secondary-black);
@@ -590,13 +590,13 @@ margin-bottom: 1rem;
   font-size: 2rem;
   color: var(--primary-white);
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .testimonial__partners-cont{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .testimonial__partners-cont .box{
 border: var(--grey-border);
@@ -628,6 +628,7 @@ gap: .5rem;
 
 .testimonial__slider-track {
   display: flex;
+  pointer-events: none;
   width: max-content;
   animation: tstmSlide 18s linear infinite;
 }

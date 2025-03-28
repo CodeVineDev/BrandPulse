@@ -29,3 +29,22 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const elements = document.querySelectorAll('.textillate-text');
+
+const observer = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      $(entry.target).css('opacity', 1).textillate({
+        in: { 
+          effect: 'fadeInUp', 
+          delayScale: 0.5, // makes it faster
+          delay: 20, // snappy delay between letters/words
+          sync: false, // domino style
+        }
+      });
+      obs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 }); // Trigger earlier, so you never see it static
+
+elements.forEach(el => observer.observe(el));

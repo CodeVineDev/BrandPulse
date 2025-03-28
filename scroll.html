@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fast Scroll Trigger Textillate</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
   <style>
     body {
       background: #111;
@@ -16,18 +17,42 @@
       font-size: 2rem;
       opacity: 0; /* Hidden until animated */
     }
+    .box{
+      background: grey;
+    }
   </style>
 </head>
 <body>
 
-  <h1 class="textillate-text">Fast and Clean Textillate Animation</h1>
-  <p style="margin-top: 500px;" class="textillate-text">This text also appears with that smooth domino fade-up.</p>
+  <h1 class="textillate-text" style="margin-top: 700px;">Fast and Clean Textillate Animation</h1>
+  <p style="margin-top: 700px;" class="textillate-text">This text also appears with that smooth domino fade-up.</p>
+  <p class="textillate-text">Achalugo you are going to be my client.
+I already know how this thing will end,you’ll buy one or ten from me Good afternoon </p>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<div class="box" style="padding:3rem; margin-top:700px;" data-aos="fade-up">
+  1
+</div>
+<div class="box" style="padding:3rem; margin-top:100px;" data-aos="fade-up">
+  1
+</div>
+<div class="box" style="padding:3rem; margin-top:100px;" data-aos="fade-up">
+  1
+</div>
+<div class="box" style="padding:3rem; margin-top:100px;" data-aos="fade-up">
+  1
+</div>
+
+  <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
   <script>
+  AOS.init({
+    duration: 300, // animation duration in ms
+    once: true,    // whether animation should happen only once
+    easing: 'ease-out-cubic'
+  });
     const elements = document.querySelectorAll('.textillate-text');
 
     const observer = new IntersectionObserver((entries, obs) => {
@@ -44,7 +69,7 @@
           obs.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.3 }); // Trigger earlier, so you never see it static
+    }, { threshold: 0.5 }); // Trigger earlier, so you never see it static
 
     elements.forEach(el => observer.observe(el));
   </script>
