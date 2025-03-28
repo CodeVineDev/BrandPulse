@@ -7,7 +7,25 @@ links.forEach(link => {
   }
 });
 
-const slider = document.getElementById('homeSlider');
-const sliderContent = slider.innerHTML;
-slider.innerHTML = `<div class="slider-track">${sliderContent + sliderContent}</div>`;
+document.addEventListener("DOMContentLoaded", function () {
+  const sliderTrack = document.querySelector('.slider-track');
+  const slides = document.querySelectorAll('.slide');
+
+  // Duplicate slides for seamless effect
+  slides.forEach(slide => {
+      let clone = slide.cloneNode(true);
+      sliderTrack.appendChild(clone);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const tstmSliderTrack = document.querySelector('.testimonial__slider-track');
+  const tstmSlides = document.querySelectorAll('.testimonial__slide');
+
+  // Duplicate slides for seamless effect
+  tstmSlides.forEach(slide => {
+      let clone = slide.cloneNode(true);
+      tstmSliderTrack.appendChild(clone);
+  });
+});
 

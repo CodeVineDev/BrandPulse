@@ -96,26 +96,28 @@
                         </div>
                     </div>
                     <div class="home__slider" id="homeSlider">
-                        <div class="slide">
-                            <iconify-icon class="icon" icon="ph:star-four-bold"></iconify-icon>
-                            <p>Audience Growth</p>
-                        </div>
-                        <div class="slide">
-                            <iconify-icon class="icon" icon="ph:star-four-bold"></iconify-icon>
-                            <p> Content Creation</p>
-                        </div>
-                        <div class="slide">
-                            <iconify-icon class="icon" icon="ph:star-four-bold"></iconify-icon>
-                            <p>Marketing Strategy</p>
-                        </div>
-                        <div class="slide">
-                            <iconify-icon class="icon" icon="ph:star-four-bold"></iconify-icon>
-                            <p>Online Presence</p>
-                        </div>
-                        <div class="slide">
-                            <iconify-icon class="icon" icon="ph:star-four-bold"></iconify-icon>
-                            <p>Digital Marketing Social Media
-                            </p>
+                        <div class="slider-track">
+                            <div class="slide">
+                                <iconify-icon class="icon" icon="ph:star-four-bold"></iconify-icon>
+                                <p>Audience Growth</p>
+                            </div>
+                            <div class="slide">
+                                <iconify-icon class="icon" icon="ph:star-four-bold"></iconify-icon>
+                                <p> Content Creation</p>
+                            </div>
+                            <div class="slide">
+                                <iconify-icon class="icon" icon="ph:star-four-bold"></iconify-icon>
+                                <p>Marketing Strategy</p>
+                            </div>
+                            <div class="slide">
+                                <iconify-icon class="icon" icon="ph:star-four-bold"></iconify-icon>
+                                <p>Online Presence</p>
+                            </div>
+                            <div class="slide">
+                                <iconify-icon class="icon" icon="ph:star-four-bold"></iconify-icon>
+                                <p>Digital Marketing Social Media
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -235,7 +237,7 @@
                 <div class="case-study__content">
                     <div class="case-study__card">
                         <a href="Pages/casestudy1.html">
-                            <img src="Images/gym-img.webp" alt="case study image">
+                            <img src="Images/gym-img.webp" loading="eager" alt="case study image">
                             <div class="date">
                                 <p>OCT 29, 2024</p>
                                 <p>SOCIAL MEDIA</p>
@@ -247,7 +249,7 @@
                     </div>
                     <div class="case-study__card">
                         <a href="Pages/casestudy2.html">
-                            <img src="Images/office-img.webp" alt="case study image">
+                            <img src="Images/office-img.webp" loading="eager" alt="case study image">
                             <div class="date">
                                 <p>NOV 18, 2024</p>
                                 <p>B2B</p>
@@ -279,7 +281,7 @@
                         <p>Abstract UI</p>
                     </div>
                     <div class="box">
-                        <iconify-icon class="icon" icon="token:abstract"></iconify-icon>
+                        <iconify-icon class="icon" icon="ant-design:audio-filled"></iconify-icon>
                         <p>DevOps</p>
                     </div>
                     <div class="box span-two">
@@ -287,44 +289,145 @@
                         <p>Chorus UI</p>
                     </div>
                 </div>
-                <div class="testimonial__carousel">
-                    <div class="testimonial__slider">
+                <div class="testimonial__slider" id="testimonialSlider">
+                    <div class="testimonial__slider-track">
                         <div class="testimonial__slide">
-                            <div>
-                                <img src="#" alt="client profile picture">
+                            <div class="image-cont">
+                                <div class="user-image">
+                                    <img src="Images/user1.webp" alt="client profile picture">
+                                </div>
+                                <div>
+                                    <h4 class="testimonial__client-name">Kylie Davis</h4>
+                                    <p class="testimonial__client-role">Digital Marketer</p>
+                                </div>
                             </div>
                             <div>
-                                <h4 class="testimonial__client-name">Kylie Davis</h4>
-                                <p class="testimonial__client-role">Digital Marketer</p>
-                                <div class="testimonail__client-rating">
-                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
-                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
-                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
-                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
-                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                <div class="testimonial__client-rating">
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
                                 </div>
-                                <div class="testimonial__client-msg">Thanks to BrandPulse, I was able to Lorem ipsum
-                                    dolor sit, amet consectetur adipisicing elit. Adipisci pariatur modi amet, earum id
-                                    delectus?</div>
+                                <p class="testimonial__client-msg">
+                                    Thanks to BrandPulse, I was able to Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit.
+                                </p>
                             </div>
                         </div>
                         <div class="testimonial__slide">
-                            <div>
-                                <img src="#" alt="client profile picture">
+                            <div class="image-cont">
+                                <div class="user-image">
+                                    <img src="Images/user2.webp" alt="client profile picture">
+                                </div>
+                                <div>
+                                    <h4 class="testimonial__client-name">Josh Brown</h4>
+                                    <p class="testimonial__client-role">Social Manager</p>
+                                </div>
                             </div>
                             <div>
-                                <h4 class="testimonial__client-name">Josh Brown</h4>
-                                <p class="testimonial__client-role">Social Manager</p>
-                                <div class="testimonail__client-rating">
-                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
-                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
-                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
-                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
-                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                <div class="testimonial__client-rating">
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
                                 </div>
-                                <div class="testimonial__client-msg">Working with BrandPulse Lorem ipsum
-                                    dolor sit, amet consectetur adipisicing elit. Adipisci pariatur modi amet, earum id
-                                    delectus?</div>
+                                <p class="testimonial__client-msg">
+                                    Working with BrandPulse Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonial__slide">
+                            <div class="image-cont">
+                                <div class="user-image">
+                                    <img src="Images/user3.webp" alt="client profile picture">
+                                </div>
+                                <div>
+                                    <h4 class="testimonial__client-name">Josh Brown</h4>
+                                    <p class="testimonial__client-role">Content Creator</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="testimonial__client-rating">
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <p class="testimonial__client-msg">
+                                    Working with BrandPulse Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonial__slide">
+                            <div class="image-cont">
+                                <div class="user-image">
+                                    <img src="Images/user4.webp" alt="client profile picture">
+                                </div>
+                                <div>
+                                    <h4 class="testimonial__client-name">Natasha Lewis</h4>
+                                    <p class="testimonial__client-role">Manager</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="testimonial__client-rating">
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <p class="testimonial__client-msg">
+                                    Working with BrandPulse Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonial__slide">
+                            <div class="image-cont">
+                                <div class="user-image">
+                                    <img src="Images/user5.jpg" alt="client profile picture">
+                                </div>
+                                <div>
+                                    <h4 class="testimonial__client-name">Josh Brown</h4>
+                                    <p class="testimonial__client-role">Content Creator</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="testimonial__client-rating">
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <p class="testimonial__client-msg">
+                                    Working with BrandPulse Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonial__slide">
+                            <div class="image-cont">
+                                <div class="user-image">
+                                    <img src="Images/user2.webp" alt="client profile picture">
+                                </div>
+                                <div>
+                                    <h4 class="testimonial__client-name">Natasha Lewis</h4>
+                                    <p class="testimonial__client-role">Manager</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="testimonial__client-rating">
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon class="icon" icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <p class="testimonial__client-msg">
+                                    Working with BrandPulse Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                </p>
                             </div>
                         </div>
                     </div>
