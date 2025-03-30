@@ -11,11 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <link rel="stylesheet" href="../style.css">
     <script src="../script.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
@@ -27,7 +24,7 @@
         <nav>
             <div class="navbar__container">
                 <div class="navbar__logo">
-                    <img src="../Images/brandpulse-logo.jpg" alt="brandpulse logo">
+                    <img src="../Images/brandpulse-logo.png" alt="brandpulse logo">
                     <p>BrandPulse</p>
                 </div>
                 <div class="navbar__links">
@@ -56,13 +53,16 @@
         <!-- DETAILS START -->
         <section>
             <div class="case-study__details">
-                <p class="details__accent-txt">B2B</p>
-                <h2 class="details__header">HR Management Software</h2>
-                <p class="details__date">Nov 18, 2024</p>
-                <p class="details__problem">A B2B HR management software provider aimed to demonstrate the value of its
+                <p class="details__accent-txt" data-aos="fade-up">B2B</p>
+                <h2 class="details__header" data-aos="fade-up" data-aos-delay="100">HR Management Software</h2>
+                <p class="details__date" data-aos="fade-up" data-aos-delay="150">Nov 18, 2024</p>
+                <p class="details__problem" data-aos="fade-up" data-aos-delay="200">A B2B HR management software
+                    provider aimed to demonstrate the value of its
                     solutions to potential clients effectively.</p>
-                <img src="#" alt="case study image">
-                <h3 class="case__header">Case Study Overview</h3>
+                <div class="image">
+                    <img src="../Images/office-img.jpg" alt="case study image">
+                </div>
+                <h3 class="case__header" data-aos="fade-up">Case Study Overview</h3>
                 <p class="case-txt">The HR management software company faced challenges in showcasing the tangible
                     benefits of its solutions to prospective clients, which hindered lead conversion rates. We developed
                     a series of educational webinars and detailed case studies that highlighted successful client
@@ -92,13 +92,28 @@
             </div>
         </section>
         <!-- DETAILS END -->
+        <!-- CALL TO ACTION START -->
+        <section>
+            <div class="cta__cont">
+                <div class="cta_box">
+                    <h3 class="cta__header">Ready to Elevate Your Brand?</h3>
+                    <p class="cta__sub-txt">Unlock the full potential of your business with our expert social media
+                        marketing strategies designed to engage your audience and drive results.</p>
+                    <button>
+                        <a href="#" class="cta__cta-btn">Book Free Consultation</a>
+                    </button>
+                    <img src="../Images/arrow-img.png" alt="call to action arrow">
+                </div>
+            </div>
+        </section>
+        <!-- CALL TO ACTION END -->
     </main>
     <footer>
         <div class="footer__cont">
             <div class="footer__content">
                 <div class="footer__box">
                     <div class="footer__logo">
-                        <img src="../Images/brandpulse-logo.jpg" alt="BrandPulse logo">
+                        <img src="../Images/brandpulse-logo.png" alt="BrandPulse logo">
                         <h4>BrandPulse</h4>
                     </div>
                     <p class="footer__sub-txt">Boost Your Brand with Social Media Marketing</p>
@@ -122,6 +137,13 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init({
+            duration: 100, // animation duration in ms
+            once: true,    // whether animation should happen only once
+            easing: 'ease-out-cubic'
+        });
+    </script>
 </body>
 
 </html>

@@ -1182,7 +1182,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   overflow: hidden;
   transition: var(--transition);
 }
-.call-us.call-us a {
+.call-us a {
   text-decoration: none;
   font-size: 1.2rem;
   background: var(--secondary-black);
@@ -1195,10 +1195,10 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   margin-right: -1rem;
   transition: var(--transition);
 }
-.call-us.call-us button:hover a {
+.call-us button:hover a {
   margin-right: 0;
 }
-.call-us.call-us .icon {
+.call-us .icon {
   opacity: 0;
   font-size: 1.2rem;
   transition: 200ms ease-in-out;
@@ -1212,3 +1212,67 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 .call-us .icon {
   font-size: 1.5rem;
 }
+.case-study__details{
+  width: min(97%, 1100px);
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-top: 7rem;
+}
+.case-study__details .image{
+  height: 20rem;
+  margin:3rem 0;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+.case-study__details img{
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.details__accent-txt{
+  background: var(--secondary-black);
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: max-content;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  border: var(--grey-border);
+}
+.details__header {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.details__problem, .details__date {
+  font-size: 1.3rem;
+  color: var(--primary-grey);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  text-wrap: balance;
+}
+.case__header{
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.case-txt{
+  font-size: 1.2rem;
+  color: var(--primary-grey);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.case__sub-head{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+ 
