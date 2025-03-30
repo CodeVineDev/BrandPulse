@@ -16,6 +16,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <link rel="stylesheet" href="../style.css">
     <script src="../script.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
@@ -27,7 +29,7 @@
         <nav>
             <div class="navbar__container">
                 <div class="navbar__logo">
-                    <img src="../Images/brandpulse-logo.jpg" alt="brandpulse logo">
+                    <img src="../Images/brandpulse-logo.png" alt="brandpulse logo">
                     <p>BrandPulse</p>
                 </div>
                 <div class="navbar__links">
@@ -62,7 +64,7 @@
         <!-- ABOUT HOME END -->
         <!-- ABOUT US START -->
         <section>
-            <div class="about__about-us">
+            <div class="about__about-us" data-aos="fade-up">
                 <div class="about__us-left">
                     <p class="about__accent-txt">About Us</p>
                     <h2 class="about__us-header">Your Partner in Social Media Success</h2>
@@ -71,21 +73,24 @@
                         social media.
                     </p>
                     <ul class="about__insight-list">
-                        <li class="list"><iconify-icon icon="heroicons:light-bulb-20-solid"></iconify-icon>
+                        <li class="list"><iconify-icon class="icon" icon="heroicons:light-bulb-20-solid"></iconify-icon>
                             <p>Creative Content Solutions</p>
                         </li>
-                        <li class="list"> <iconify-icon icon="bitcoin-icons:graph-filled"></iconify-icon>
+                        <li class="list"> <iconify-icon class="icon" icon="bitcoin-icons:graph-filled"></iconify-icon>
                             <p>Boost Engagement Rates</p>
                         </li>
                         <li class="list">
-                            <iconify-icon icon="ic:round-laptop"></iconify-icon>
+                            <iconify-icon class="icon" icon="ic:round-laptop"></iconify-icon>
                             <p>Data-Driven Insights</p>
                         </li>
                     </ul>
-                    <a href="#" class="about__home-cta">Book Strategy Call</a>
+                    <button>
+                        <a href="#" class="about__home-cta">Book Strategy Call</a>
+                    </button>
+
                 </div>
                 <div class="about__us-right">
-                    <img src="#" alt="about page image">
+                    <img src="../Images/about-img.jpg" alt="about page image">
                 </div>
             </div>
         </section>
@@ -93,11 +98,14 @@
         <!-- ABOUT WHY US START -->
         <section>
             <div class="about__why-us">
-                <div class="wby-us__left">
-                    <img src="#" alt="why us image">
+                <div class="why-us__left">
+                    <img src="../Images/about-img-2.jpg" alt="why us image">
                     <h3>Eager to Begin?</h3>
                     <h4>Reach out to us today!</h4>
-                    <a href="#" class="why-us__cta">Get in Touch</a>
+                    <div class="learn-more">
+                        <a href="#" class="why-us__cta">Get in Touch</a>
+                        </a><iconify-icon class="icon" icon="ep:top-right"></iconify-icon>
+                    </div>
                 </div>
                 <div class="wby-us__right">
                     <div class="why-us__accent">Why Us</div>
@@ -150,10 +158,10 @@
                     <h3 class="cta__header">Ready to Elevate Your Brand?</h3>
                     <p class="cta__sub-txt">Unlock the full potential of your business with our expert social media
                         marketing strategies designed to engage your audience and drive results.</p>
-                   <button>
-                    <a href="#" class="cta__cta-btn">Book Free Consultation</a>
-                   </button> 
-                    <img src="../Images/arrow-img.jpg" alt="call to action arrow">
+                    <button>
+                        <a href="#" class="cta__cta-btn">Book Free Consultation</a>
+                    </button>
+                    <img src="../Images/arrow-img.png" alt="call to action arrow">
                 </div>
             </div>
         </section>
@@ -164,7 +172,7 @@
             <div class="footer__content">
                 <div class="footer__box">
                     <div class="footer__logo">
-                        <img src="../Images/brandpulse-logo.jpg" alt="BrandPulse logo">
+                        <img src="../Images/brandpulse-logo.png" alt="BrandPulse logo">
                         <h4>BrandPulse</h4>
                     </div>
                     <p class="footer__sub-txt">Boost Your Brand with Social Media Marketing</p>
@@ -188,6 +196,13 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init({
+            duration: 100, // animation duration in ms
+            once: true,    // whether animation should happen only once
+            easing: 'ease-out-cubic'
+        });
+    </script>
 </body>
 
 </html>

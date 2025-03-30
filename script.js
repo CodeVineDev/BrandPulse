@@ -55,14 +55,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
   function startTyping(element) {
-      const text = element.dataset.fullText;
+      const words = element.dataset.fullText.split(" ");
       let index = 0;
       
       function type() {
-          if (index < text.length) {
-              element.textContent += text.charAt(index);
+          if (index < words.length) {
+              element.textContent += (index === 0 ? "" : " ") + words[index];
               index++;
-              setTimeout(type, 1);
+              setTimeout(type, 10);
           }
       }
       type();
