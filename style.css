@@ -797,13 +797,22 @@ body :where(.about__home-cont, .work__home-cont, .contact__home-cont) {
   margin: auto;
   margin-top: 5.5rem;
   background: var(--primary-neon);
-  padding: 6rem;
+  padding: 7rem;
   text-align: center;
   border-radius: 1.5rem;
 }
 body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   color: var(--secondary-black);
   font-size: 3rem;
+}
+.about__home-cont .space{
+  height: 3.625rem;
+}
+.why-us__header .space{
+  height: 3.635rem;
+}
+.why-us__sub-txt .space{
+  height: 4.5rem;
 }
 .about__about-us {
   border-radius: 1.5rem;
@@ -831,6 +840,12 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   font-weight: 600;
   margin-bottom: 1rem;
   line-height: 1.5;
+}
+.about__us-left h2.space{
+height: 7.5rem;
+}
+.about__us-left .about__us-sub-txt .space{
+height: 3rem;
 }
 .about__us-sub-txt {
   font-size: var(--one-rem-font);
