@@ -29,22 +29,42 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const elements = document.querySelectorAll('.textillate-text');
-
-const observer = new IntersectionObserver((entries, obs) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      $(entry.target).css('opacity', 1).textillate({
-        in: { 
-          effect: 'fadeInUp', 
-          delayScale: 0.5, // makes it faster
-          delay: 20, // snappy delay between letters/words
-          sync: false, // domino style
-        }
+document.addEventListener("DOMContentLoaded", function () {
+  const typewriterElements = document.querySelectorAll(".typewriter");
+  
+  const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+  };
+  
+  const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.style.filter = "blur(0px)";
+              startTyping(entry.target);
+              observer.unobserve(entry.target);
+          }
       });
-      obs.unobserve(entry.target);
-    }
+  }, options);
+  
+  typewriterElements.forEach(element => {
+      element.dataset.fullText = element.textContent;
+      element.textContent = "";
+      observer.observe(element);
   });
-}, { threshold: 0.5 }); // Trigger earlier, so you never see it static
-
-elements.forEach(el => observer.observe(el));
+  
+  function startTyping(element) {
+      const text = element.dataset.fullText;
+      let index = 0;
+      
+      function type() {
+          if (index < text.length) {
+              element.textContent += text.charAt(index);
+              index++;
+              setTimeout(type, 1);
+          }
+      }
+      type();
+  }
+});

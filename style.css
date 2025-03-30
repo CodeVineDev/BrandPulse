@@ -122,6 +122,7 @@ body {
   margin: auto;
   margin-bottom: 1rem;
   line-height: 1.2;
+  
 }
 .home__sub-header {
   font-size: 1.4rem;
@@ -130,6 +131,19 @@ body {
   margin: auto;
   margin-bottom: 3.5rem;
   line-height: 1.5;
+}
+.typewriter {
+  overflow: hidden;
+  filter: blur(8px);
+  transition: filter 1.5s ease;
+  display: block;
+  position: relative;
+}
+.typewriter::after {
+  content: attr(data-placeholder);
+  visibility: hidden;
+  display: block;
+  height: 0;
 }
 .home__cta-btn {
   background: var(--primary-neon);
@@ -741,6 +755,7 @@ gap: .5rem;
 }
 .footer__box{
   flex: 1;
+  padding: 1rem;
 }
 .footer__box h4{
 font-size: 1.5rem;
