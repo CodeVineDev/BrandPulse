@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
           if (index < words.length) {
               element.textContent += (index === 0 ? "" : " ") + words[index];
               index++;
-              setTimeout(type, 10);
+              setTimeout(type, 1);
           }
       }
       type();

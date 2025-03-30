@@ -11,11 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <link rel="stylesheet" href="../style.css">
     <script src="../script.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
@@ -56,7 +53,9 @@
         <!-- CONTACT  HOME START -->
         <section>
             <div class="contact__home-cont">
-                <h1 class="contact__home-header">Contact Us</h1>
+                <h1 class="contact__home-header">
+                    <spa class="typewriter">Contact Us</span>
+                </h1>
             </div>
         </section>
         <!-- CONTACT HOME END -->
@@ -64,26 +63,33 @@
         <section>
             <div class="contact__cont">
                 <div class="contact__left">
-                    <div class="contact__left-cont">
-                        <p class="contact__accent-txt">Get in Touch</p>
-                        <h2 class="contact__header">Have a question? Ask us!</h2>
-                        <p class="contact__sub-txt">
-                            Have questions, feedback, or service inquiries? We're here to listen and respond quickly.
-                            Your input is important to us, and we look forward to connecting with you!
-                        </p>
-                        <div class="contact__form">
+                    <p class="contact__accent-txt" data-aos="fade-up">Get in Touch</p>
+                    <h2 class="contact__header"><span class="typewriter">Have a question? Ask us!</span></h2>
+                    <p class="contact__sub-txt">
+                        <span class="typewriter space">Have questions, feedback, or service inquiries? We're here to
+                            listen and respond quickly.
+                            Your input is important to us, and we look forward to connecting with you!</span>
+                    </p>
+                    <div class="contact__form">
+                        <div>
                             <label for="name">Name</label>
                             <input type="text" placeholder="Jane Smith">
+                        </div>
+                        <div>
                             <label for="name">Email</label>
                             <input type="email" placeholder="Jane@BrandPulse.com">
+                        </div>
+                        <div>
                             <label for="massage">Message</label>
                             <textarea name="message" id="msg" placeholder="Hi!"></textarea>
-                            <button type="submit">Submit</button>
                         </div>
+                        <button type="submit">Submit</button>
                     </div>
                 </div>
-                <div class="contact__right">
-                    <img src="#" alt="Map">
+                <div class="contact__right" data-aos="fade-up">
+                    <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_URL" width="600" height="450"
+                        style="border:0;" loading="lazy">
+                    </iframe>
                 </div>
             </div>
         </section>
@@ -91,41 +97,48 @@
         <!-- REACH OUT START -->
         <section>
             <div class="contact__reach-out">
-                <div class="reach-out__social">
+                <div class="reach-out__social" data-aos="fade-up">
                     <iconify-icon icon="bi:linkedin"></iconify-icon>
                     <P>linkedIn</P>
                 </div>
-                <div class="reach-out__social">
+                <div class="reach-out__social" data-aos="fade-up" data-aos-delay="100">
                     <iconify-icon icon="fa6-brands:square-x-twitter"></iconify-icon>
-                    <p>X(Twitter)</p>
+                    <p>X (Twitter)</p>
                 </div>
-                <div class="reach-out__social">
+                <div class="reach-out__social" data-aos="fade-up" data-aos-delay="200">
                     <iconify-icon icon="fa:github-square"></iconify-icon>
                     <p>Github</p>
                 </div>
-                <div>
-                    <h4><iconify-icon icon="ph:users-fill"></iconify-icon>Sales</h4>
-                    <p>Reach out to our team for pricing and project details.</p>
-                    <a href="#">Talk to Us<iconify-icon icon="teenyicons:top-right-outline"></iconify-icon></a>
+                <div class="call-us">
+                    <div class="box" data-aos="fade-up">
+                        <h4><iconify-icon icon="ph:users-fill"></iconify-icon>Sales</h4>
+                        <p>Reach out to our team for pricing and project details.</p>
+                        <button>
+                            <a href="#">Talk to Us<iconify-icon class="icon" icon="ep:top-right"></iconify-icon></a>
+                        </button>
+
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-delay="100">
+                        <h4><iconify-icon icon="fluent:call-12-filled"></iconify-icon>Call Us</h4>
+                        <p>Call us regarding any enquiries and partnerships.</p>
+                        <button><a href="#">Call Team<iconify-icon class="icon"
+                                    icon="ep:top-right"></iconify-icon></a></button>
+                    </div>
                 </div>
-                <div>
-                    <h4><iconify-icon icon="fluent:call-12-filled"></iconify-icon>Call Us</h4>
-                    <p>Call us regarding any enquiries and partnerships.</p>
-                    <a href="#">Call Team<iconify-icon icon="teenyicons:top-right-outline"></iconify-icon></a>
-                </div>
+
             </div>
         </section>
         <!-- REACH OUT END -->
         <!-- CALL TO ACTION START -->
         <section>
-            <div class="cta__cont">
+            <div class="cta__cont" data-aos="fade-up">
                 <div class="cta_box">
                     <h3 class="cta__header">Ready to Elevate Your Brand?</h3>
                     <p class="cta__sub-txt">Unlock the full potential of your business with our expert social media
                         marketing strategies designed to engage your audience and drive results.</p>
-                   <button>
-                    <a href="#" class="cta__cta-btn">Book Free Consultation</a>
-                   </button> 
+                    <button>
+                        <a href="#" class="cta__cta-btn">Book Free Consultation</a>
+                    </button>
                     <img src="../Images/arrow-img.png" alt="call to action arrow">
                 </div>
             </div>
@@ -133,7 +146,7 @@
         <!-- CALL TO ACTION END -->
     </main>
     <footer>
-        <div class="footer__cont">
+        <div class="footer__cont" data-aos="fade-up">
             <div class="footer__content">
                 <div class="footer__box">
                     <div class="footer__logo">
@@ -161,6 +174,13 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init({
+            duration: 100, // animation duration in ms
+            once: true,    // whether animation should happen only once
+            easing: 'ease-out-cubic'
+        });
+    </script>
 </body>
 
 </html>
