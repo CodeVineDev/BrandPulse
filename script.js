@@ -68,3 +68,34 @@ document.addEventListener("DOMContentLoaded", function () {
       type();
   }
 });
+
+document.querySelectorAll(".accordion").forEach(accordion => {
+  accordion.addEventListener("click", function () {
+      // Toggle active class
+      this.classList.toggle("active");
+
+      // Get the next panel
+      const panel = this.nextElementSibling;
+
+      // Close other open panels
+      document.querySelectorAll(".panel").forEach(p => {
+          if (p !== panel) {
+              p.style.maxHeight = null;
+              p.style.padding = "0 15px";
+              p.previousElementSibling.classList.remove("active");
+              p.previousElementSibling.querySelector(".toggle-icon").setAttribute("icon", "ic:baseline-plus");
+          }
+      });
+
+      // Toggle current panel
+      if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+          panel.style.padding = "0 15px";
+          this.querySelector(".toggle-icon").setAttribute("icon", "ic:baseline-plus");
+      } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          panel.style.padding = "15px";
+          this.querySelector(".toggle-icon").setAttribute("icon", "ic:baseline-minus");
+      }
+  });
+});
