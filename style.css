@@ -97,6 +97,22 @@ body {
 }
 .home__cont {
   background-origin: padding-box;
+  position: relative;
+  background-image: url(Images/bg-blur.jpg);
+  background-position: 50% -1%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.home__cont::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(10px); /* Adjust blur as needed */
+  z-index: -1; /* Ensures the blur is behind the content */
 }
 .home__content {
   margin-top: 5rem;
