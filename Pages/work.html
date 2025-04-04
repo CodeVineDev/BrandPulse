@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <link rel="stylesheet" href="../style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="../script.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
 </head>
@@ -49,11 +52,11 @@
         </nav>
         <!-- NAVBAR END -->
     </header>
-    <main>
+    <main class="js-section-1">
         <!-- WORK HOME START -->
         <section>
             <div class="work__home-cont">
-                <h1 class="work__home-header"> <span class="typewriter">Company Work</span></h1>
+                <h1 class="work__home-header js-split">Company Work</h1>
             </div>
         </section>
         <!-- WORK HOME END -->
@@ -61,10 +64,10 @@
         <section>
             <div class="case-study__cont">
                 <p class="case-study__accent-txt" data-aos="fade-up">Proven Success</p>
-                <h2 class="case-study__header"><span class="typewriter">Case Studies</span></h2>
-                <p class="case-study__sub-txt"><span class="typewriter space">Explore our case studies to see how we’ve
+                <h2 class="case-study__header js-split">Case Studies</h2>
+                <p class="case-study__sub-txt js-split">Explore our case studies to see how we’ve
                         helped clients overcome
-                        challenges and achieve remarkable results through effective strategies.</span></p>
+                        challenges and achieve remarkable results through effective strategies.</p>
                 <div class="case-study__content">
                     <div class="case-study__card" data-aos="fade-up">
                         <a href="casestudy1.html">
@@ -165,13 +168,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        AOS.init({
-            duration: 100, // animation duration in ms
-            once: true,    // whether animation should happen only once
-            easing: 'ease-out-cubic'
-        });
-    </script>
 </body>
 
 </html>

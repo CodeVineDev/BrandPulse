@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrandPulse</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script defer src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
@@ -53,21 +53,18 @@
         </nav>
         <!-- NAVBAR END -->
     </header>
-    <main>
+    <main class="js-section-1">
         <!-- HERO PAGE START -->
         <section>
             <div class="home__cont">
                 <div class="home__content">
-                    <p class="home__accent-txt" data-aos="fade-up">All Marketing Solutions</p>
-                    <h1 class="home__header">
-                        <span class="typewriter space">
-                            Maximize Your Impact with Professional Social Media Marketing
-                        </span>
+                    <p class="home__accent-txt"><span data-aos="fade-up">All Marketing Solutions</span></p>
+                    <h1 class="home__header js-split">
+                        Maximize Your Impact with Professional Social Media Marketing
                     </h1>
-                    <p class="home__sub-header ">
-                        <span class="typewriter space">
-                            We help businesses connect with their audience, boost engagement, and drive sales through
-                            tailored social media strategies and compelling content.</span>
+                    <p class="home__sub-header js-split">
+                        We help businesses connect with their audience, boost engagement, and drive sales through
+                        tailored social media strategies and compelling content.
                     </p>
                     <button class="home__cta-btn" data-aos="fade-up" data-aos-offset="-300">
                         <a href="#">Book Consultation Call</a>
@@ -139,18 +136,18 @@
             <div class="service__cont">
                 <p class="service__accent-txt" data-aos="fade-up">What We Deliver</p>
                 <div class="service__head-cont">
-                    <h2>
-                        <span class="typewriter space">Our Services</span>
+                    <h2 class="js-split">
+                        Our Services
                     </h2>
                     <div class="learn-more" data-aos="fade-up">
                         <a href="Pages/about.html">Learn More</a>
                         <iconify-icon class="icon" icon="ep:top-right"></iconify-icon>
                     </div>
                 </div>
-                <p class="service__sub-txt"><span class="typewriter space">
-                        We offer tailored solutions to enhance your social media
-                        presence and drive real results for your business.
-                    </span> </p>
+                <p class="service__sub-txt js-split">
+                    We offer tailored solutions to enhance your social media
+                    presence and drive real results for your business.
+                </p>
                 <div class="service__content">
                     <div class="service__box" data-aos="fade-up">
                         <div class="service__content-icon">
@@ -210,13 +207,11 @@
                 <p class="process__accent-txt" data-aos="fade-up">
                     Simple Process
                 </p>
-                <h2 class="process__header"> <span class="typewriter space">
-                        Our Proven Process
-                    </span></h2>
-                <p class="process__sub-txt"> <span class="typewriter space">
-                        We simplify social media marketing by guiding you through our clear, three-step process.
-                    </span>
-
+                <h2 class="process__header js-split">
+                    Our Proven Process
+                </h2>
+                <p class="process__sub-txt js-split">
+                    We simplify social media marketing by guiding you through our clear, three-step process.
                 </p>
                 <div class="process__content">
                     <div class="process__box" data-aos="fade-up">
@@ -248,10 +243,10 @@
         <section>
             <div class="case-study__cont">
                 <p class="case-study__accent-txt">Proven Success</p>
-                <h2 class="case-study__header"> <span class="typewriter space">Case Studies</span></h2>
-                <p class="case-study__sub-txt"><span class="typewriter space">Explore our case studies to see how we’ve
+                <h2 class="case-study__header js-split">Case Studies</h2>
+                <p class="case-study__sub-txt js-split">Explore our case studies to see how we’ve
                         helped clients overcome challenges and achieve remarkable results through effective
-                        strategies.</span></p>
+                        strategies.</p>
                 <div class="case-study__content">
                     <div class="case-study__card" data-aos="fade-up" data-aos-delay="-200">
                         <a href="Pages/casestudy1.html">
@@ -289,9 +284,10 @@
         <section>
             <div class="testimonial__cont">
                 <p class="testimonial__accent-txt" data-aos="fade-up">Testimonials</p>
-                <h2 class="testimonial__header"><span class="typewriter space">Hear from Our Clients</span></h2>
-                <p class="testimonial__sub-txt"><span class="typewriter space">Hear from our satisfied clients about how we has transformed their
-                    social media presence and driven meaningful results.</span></p>
+                <h2 class="testimonial__header js-split">Hear from Our Clients</h2>
+                <p class="testimonial__sub-txt js-split">Hear from our satisfied clients about how
+                        we has transformed their
+                        social media presence and driven meaningful results.</p>
                 <h3 class="testimonial__partners" data-aos="fade-up">Our Partners:</h3>
                 <div class="testimonial__partners-cont" data-aos="fade-up" data-aos-offset="-0.1">
                     <div class="box">
@@ -498,13 +494,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        AOS.init({
-            duration: 100, // animation duration in ms
-            once: true,    // whether animation should happen only once
-            easing: 'ease-out-cubic'
-        });
-    </script>
 </body>
 
 </html>

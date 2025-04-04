@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <link rel="stylesheet" href="../style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="../script.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
 </head>
@@ -49,12 +52,12 @@
         </nav>
         <!-- NAVBAR END -->
     </header>
-    <main>
+    <main class="js-section-1">
         <!-- CONTACT  HOME START -->
         <section>
             <div class="contact__home-cont">
-                <h1 class="contact__home-header">
-                    <spa class="typewriter">Contact Us</span>
+                <h1 class="contact__home-header js-split">
+                    Contact Us
                 </h1>
             </div>
         </section>
@@ -64,11 +67,11 @@
             <div class="contact__cont">
                 <div class="contact__left">
                     <p class="contact__accent-txt" data-aos="fade-up">Get in Touch</p>
-                    <h2 class="contact__header"><span class="typewriter">Have a question? Ask us!</span></h2>
-                    <p class="contact__sub-txt">
-                        <span class="typewriter space">Have questions, feedback, or service inquiries? We're here to
-                            listen and respond quickly.
-                            Your input is important to us, and we look forward to connecting with you!</span>
+                    <h2 class="contact__header js-split">Have a question? Ask us!</h2>
+                    <p class="contact__sub-txt js-split">
+                        Have questions, feedback, or service inquiries? We're here to
+                        listen and respond quickly.
+                        Your input is important to us, and we look forward to connecting with you!
                     </p>
                     <div class="contact__form">
                         <div>
@@ -174,13 +177,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        AOS.init({
-            duration: 100, // animation duration in ms
-            once: true,    // whether animation should happen only once
-            easing: 'ease-out-cubic'
-        });
-    </script>
 </body>
 
 </html>
