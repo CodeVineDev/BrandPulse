@@ -24,16 +24,22 @@
   --grey-border: 0.1px solid rgb(29, 29, 29);
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
   background: var(--primary-black);
   color: var(--primary-white);
   font-family: var(--inter-font);
-  overflow-x: hidden;
 }
 
 .navbar__container {
