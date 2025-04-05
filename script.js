@@ -8,10 +8,10 @@ links.forEach((link) => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    AOS.init({
-      once: true,  // Animations will only happen once
-    });
-  
+  AOS.init({
+    once: true, // Animations will only happen once
+  });
+
   const sliderTrack = document.querySelector(".slider-track");
   const slides = document.querySelectorAll(".slide");
 
@@ -32,12 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 gsap.registerPlugin(ScrollTrigger, CustomEase);
 
-const CUSTOM_EASE = "M0,0 C0.402,0 0.238,0.39 0.428,0.7 0.574,0.938 0.818,1.001 1,1 ";
+const CUSTOM_EASE =
+  "M0,0 C0.402,0 0.238,0.39 0.428,0.7 0.574,0.938 0.818,1.001 1,1 ";
 
 const splitIntoWords = (el) => {
   const strArray = el.innerText.split(" ");
   const words = strArray.map((word, i) => {
-    return `<span class="word-wrapper"><span class="word">${i === strArray.length - 1 ? word : `${word} `}</span></span>`;
+    return `<span class="word-wrapper"><span class="word">${
+      i === strArray.length - 1 ? word : `${word} `
+    }</span></span>`;
   });
 
   el.innerHTML = words.join("");
@@ -50,10 +53,10 @@ textElements.forEach((el) => {
 
   const words = el.querySelectorAll(".word");
 
-  gsap.set(words, { 
-    yPercent: 100, 
-    opacity: 0, 
-    filter: "blur(10px)" 
+  gsap.set(words, {
+    yPercent: 100,
+    opacity: 0,
+    filter: "blur(10px)",
   });
 
   gsap.to(words, {
@@ -113,4 +116,16 @@ document.querySelectorAll(".accordion").forEach((accordion) => {
       );
     }
   });
+});
+
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+const equalsIcon = document.querySelector(".equals");
+const timesIcon = document.querySelector(".times");
+
+hamburger.addEventListener("click", () => {
+  mobileMenu.classList.toggle("open");
+  const isOpen = mobileMenu.classList.contains("open");
+  equalsIcon.style.display = isOpen ? "none" : "block";
+  timesIcon.style.display = isOpen ? "block" : "none";
 });

@@ -86,6 +86,7 @@ body {
   font-size: 2rem;
   color: var(--primary-grey);
 }
+
 .navbar__links a {
   text-decoration: none;
   padding: 1rem;
@@ -1309,9 +1310,14 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
     align-items: center;
     padding: 1.2rem;
   }
+  .navbar__menu .equals {
+    display: block;
+  }
+  .navbar__menu .times{
+    display: none;
+  }
   .navlinks__cont {
     position: absolute;
-    border: var(--red-border);
     width: 100%;
     top: 100%;
     left: 0;
@@ -1319,22 +1325,34 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
     background-color: var(--primary-black);
     overflow: hidden;
     padding: 0;
+    height: 0;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+  .navbar__menu {
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+  .navlinks__cont.open {
+    height: 360px;
+    opacity: 1;
   }
   .navbar__links {
     width: 100%;
-    margin:1rem 0 3rem 0;
+    margin: 1rem 0 3rem 0;
   }
   .navbar__links ul {
     flex-direction: column;
   }
-  .navbar__links li{
+  .navbar__links li {
     width: 100%;
     padding: 1rem;
     text-align: center;
+    font-size: 1.2rem;
   }
   .navbar__socials {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .navbar__menu {
     display: block;
