@@ -9,7 +9,14 @@
   --primary-black-blur: #0a0a0a80;
   --secondary-black: #0a0a0a;
   --width-850: min(90%, 850px);
-  --width-1200px: min(97%, 1200px);
+  --onefive-rem: 1.5rem;
+  --onetwo-rem: 1.2rem;
+  --two-rem: 2rem;
+  --threefive-rem: 3.5rem;
+  --onefour-rem: 1.4rem;
+  --pointfive-rem: 0.85rem;
+  --five-rem: 5rem;
+  --width-1200px: min(90%, 1200px);
   --red-border: 2px solid red;
   --transition: 400ms ease-in;
   --one-rem-font: 1rem;
@@ -55,7 +62,7 @@ body {
 }
 
 .navbar__logo p {
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
   font-weight: 700;
 }
 .navbar__container :where(ul) {
@@ -73,7 +80,7 @@ body {
   grid-column: span 2;
 }
 .navbar__links {
-  font-size: 1.2rem;
+  font-size: var(--onetwo-rem);
   font-weight: 600;
 }
 .navbar__menu {
@@ -83,7 +90,7 @@ body {
   display: none;
 }
 .navbar__menu .icon {
-  font-size: 2rem;
+  font-size: var(--two-rem);
   color: var(--primary-grey);
 }
 
@@ -106,7 +113,7 @@ body {
 }
 .navbar__socials .icon {
   color: var(--primary-grey);
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
   display: flex;
   align-items: center;
   padding: 0.5rem;
@@ -136,15 +143,15 @@ body {
   z-index: -1; /* Ensures the blur is behind the content */
 }
 .home__content {
-  margin-top: 5rem;
-  padding-top: 5rem;
+  margin-top: var(--five-rem);
+  padding-top: var(--five-rem);
   text-align: center;
 }
 .home__accent-txt {
   background: var(--secondary-black);
   padding: 0.8rem 1.8rem;
   border-radius: 2rem;
-  font-size: 0.85rem;
+  font-size: var(--pointfive-rem);
   font-weight: 600;
   width: max-content;
   margin: auto;
@@ -152,7 +159,7 @@ body {
   border: var(--grey-border);
 }
 .home__header {
-  font-size: 3.5rem;
+  font-size: var(--threefive-rem);
   font-weight: 600;
   width: var(--width-850);
   margin: auto;
@@ -161,11 +168,11 @@ body {
 }
 
 .home__sub-header {
-  font-size: 1.4rem;
+  font-size: var(--onefour-rem);
   color: var(--primary-white);
   width: var(--width-850);
   margin: auto;
-  margin-bottom: 3.5rem;
+  margin-bottom: var(--threefive-rem);
   line-height: 1.5;
 }
 
@@ -181,7 +188,7 @@ body {
   background: var(--accent-neon);
 }
 .home__cta-btn a {
-  font-size: 1.3rem;
+  font-size: var(--onetwo-rem);
   text-decoration: none;
   font-weight: 600;
   color: var(--primary-black);
@@ -194,17 +201,17 @@ body {
   margin: auto;
 }
 .home__ratings span p {
-  font-size: 1rem;
+  font-size: var(--one-rem-font);
   color: var(--primary-grey);
   padding-top: 0.2rem;
 }
 .home__ratings .icon {
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
   color: var(--primary-neon);
 }
 .home__rating-txt {
   color: var(--primary-grey);
-  font-size: 1.2rem;
+  font-size: var(--onetwo-rem);
   margin-bottom: 3rem;
 }
 .home__proof-cont {
@@ -224,7 +231,7 @@ body {
   color: var(--primary-grey);
 }
 .home__proof-cont .box h4 {
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
   margin-bottom: 1rem;
 }
 .home__proof-cont .box p {
@@ -268,7 +275,7 @@ body {
   color: var(--primary-white);
 }
 #homeSlider .slide :where(.icon, p) {
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
   font-weight: 600;
 }
 .slider-track {
@@ -301,14 +308,14 @@ body {
 .service__cont {
   width: var(--width-1200px);
   margin: auto;
-  padding-top: 5rem;
+  padding-top: var(--five-rem);
   margin-bottom: 5rem;
 }
 .service__accent-txt {
   background: var(--secondary-black);
   padding: 0.8rem 1.8rem;
   border-radius: 2rem;
-  font-size: 0.85rem;
+  font-size: var(--pointfive-rem);
   font-weight: 600;
   width: max-content;
   margin-bottom: 1.5rem;
@@ -342,7 +349,7 @@ body {
 }
 .service__head-cont a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: var(--onetwo-rem);
   color: var(--primary-white);
   font-weight: 600;
   margin-right: -0.5rem;
@@ -353,7 +360,7 @@ body {
 }
 .service__head-cont .icon {
   opacity: 0;
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
   margin-right: -1rem;
   transition: 200ms ease-in-out;
 }
@@ -390,11 +397,11 @@ body {
 }
 .service__content-icon .icon {
   color: var(--primary-neon);
-  font-size: 2rem;
+  font-size: var(--two-rem);
   padding: 1.2rem 1.4rem;
 }
 .service__box h4 {
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
   color: var(--primary-white);
   margin-bottom: 1rem;
 }
@@ -405,14 +412,14 @@ body {
   margin-bottom: 1rem;
 }
 .process__cont {
-  padding-top: 5rem;
+  padding-top: var(--five-rem);
   margin-bottom: 5rem;
 }
 .process__accent-txt {
   background: var(--secondary-black);
   padding: 0.8rem 1.8rem;
   border-radius: 2rem;
-  font-size: 0.85rem;
+  font-size: var(--pointfive-rem);
   font-weight: 600;
   width: max-content;
   margin: auto;
@@ -472,7 +479,7 @@ body {
   color: var(--primary-neon);
 }
 .process__box h4 {
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
   color: var(--primary-white);
   margin-bottom: 1rem;
 }
@@ -482,7 +489,7 @@ body {
   font-size: var(--one-rem-font);
 }
 .case-study__cont {
-  padding-top: 5rem;
+  padding-top: var(--five-rem);
   margin-bottom: 5rem;
 }
 
@@ -490,7 +497,7 @@ body {
   background: var(--secondary-black);
   padding: 0.8rem 1.8rem;
   border-radius: 2rem;
-  font-size: 0.85rem;
+  font-size: var(--pointfive-rem);
   font-weight: 600;
   width: max-content;
   margin: auto;
@@ -553,7 +560,7 @@ body {
   padding: 1rem 2rem;
 }
 .case-study__card h4 {
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
   color: var(--primary-white);
   margin-bottom: 1rem;
 }
@@ -578,7 +585,7 @@ body {
 }
 .case-study__cont .learn-more a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: var(--onetwo-rem);
   color: var(--primary-white);
   font-weight: 600;
 }
@@ -590,7 +597,7 @@ body {
 }
 .case-study__cont .icon {
   opacity: 0;
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
   margin-right: -2rem;
   transition: 200ms ease-in-out;
 }
@@ -603,13 +610,13 @@ body {
   width: var(--width-1200px);
   margin: auto;
   margin-bottom: 5rem;
-  padding-top: 5rem;
+  padding-top: var(--five-rem);
 }
 .testimonial__accent-txt {
   background: var(--secondary-black);
   padding: 0.8rem 1.8rem;
   border-radius: 2rem;
-  font-size: 0.85rem;
+  font-size: var(--pointfive-rem);
   font-weight: 600;
   width: max-content;
   margin: auto;
@@ -633,7 +640,7 @@ body {
   line-height: 1.5;
 }
 .testimonial__partners {
-  font-size: 2rem;
+  font-size: var(--two-rem);
   color: var(--primary-white);
   text-align: center;
   margin-bottom: 2rem;
@@ -654,10 +661,10 @@ body {
   gap: 0.5rem;
 }
 .testimonial__partners-cont .icon {
-  font-size: 3.5rem;
+  font-size: var(--threefive-rem);
 }
 .testimonial__partners-cont .box p {
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
   font-weight: 600;
 }
 .testimonial__partners-cont .span-two {
@@ -712,7 +719,7 @@ body {
   margin-bottom: 1rem;
 }
 .testimonial__client-rating .icon {
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
 }
 .testimonial__client-msg {
   font-size: var(--one-rem-font);
@@ -748,7 +755,7 @@ body {
 }
 .cta_box p {
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: var(--onetwo-rem);
   color: var(--primary-grey);
   width: min(90%, 500px);
   margin: auto;
@@ -766,7 +773,7 @@ body {
 }
 .cta_box a {
   color: var(--secondary-black);
-  font-size: 1.3rem;
+  font-size: var(--onetwo-rem);
   font-weight: 600;
   text-decoration: none;
 }
@@ -796,7 +803,7 @@ body {
   padding: 1rem;
 }
 .footer__box h4 {
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
   color: var(--primary-white);
   margin-bottom: 1rem;
 }
@@ -850,7 +857,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   background: var(--secondary-black);
   padding: 0.8rem 1.8rem;
   border-radius: 2rem;
-  font-size: 0.85rem;
+  font-size: var(--pointfive-rem);
   font-weight: 600;
   width: max-content;
   margin-bottom: 1.5rem;
@@ -881,7 +888,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   font-size: var(--one-rem-font);
 }
 .about__insight-list .icon {
-  font-size: 1.4rem;
+  font-size: var(--onefour-rem);
 }
 .about__us-left button {
   background: var(--primary-neon);
@@ -895,7 +902,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 }
 .about__us-left a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: var(--onetwo-rem);
   font-weight: 600;
   color: var(--secondary-black);
 }
@@ -922,12 +929,12 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   margin-bottom: 3rem;
 }
 .why-us__left h3 {
-  font-size: 2rem;
+  font-size: var(--two-rem);
   color: var(--primary-white);
   margin-bottom: 1rem;
 }
 .why-us__left h4 {
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
   color: var(--primary-grey);
   margin-bottom: 1.5rem;
 }
@@ -955,7 +962,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 }
 .why-us__left a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
   background: var(--secondary-black);
   z-index: 1;
   color: var(--primary-white);
@@ -968,7 +975,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 }
 .why-us__left .icon {
   opacity: 0;
-  font-size: 1.2rem;
+  font-size: var(--onetwo-rem);
   transition: 200ms ease-in-out;
 }
 .why-us__left .learn-more:hover {
@@ -978,13 +985,13 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   opacity: 1;
 }
 .why-us__right .icon {
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
 }
 .why-us__accent {
   background: var(--secondary-black);
   padding: 0.8rem 1.8rem;
   border-radius: 2rem;
-  font-size: 0.85rem;
+  font-size: var(--pointfive-rem);
   font-weight: 600;
   width: max-content;
   margin-bottom: 1.5rem;
@@ -1046,13 +1053,13 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin-top: 5rem;
+  margin-top: var(--five-rem);
 }
 .contact__accent-txt {
   background: var(--secondary-black);
   padding: 0.8rem 1.8rem;
   border-radius: 2rem;
-  font-size: 0.85rem;
+  font-size: var(--pointfive-rem);
   font-weight: 600;
   width: max-content;
   margin-bottom: 1.5rem;
@@ -1146,7 +1153,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   background: var(--secondary-black);
   border-radius: 1rem;
   transition: 200ms ease-out;
-  font-size: 1.4rem;
+  font-size: var(--onefour-rem);
   font-weight: 600;
 }
 .contact__reach-out .box {
@@ -1169,7 +1176,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   gap: 2rem;
 }
 .call-us h4 {
-  font-size: 1.4rem;
+  font-size: var(--onefour-rem);
   display: flex;
   align-items: center;
   gap: 0.3rem;
@@ -1197,7 +1204,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 }
 .call-us a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: var(--onetwo-rem);
   background: var(--secondary-black);
   z-index: 1;
   color: var(--primary-white);
@@ -1213,7 +1220,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 }
 .call-us .icon {
   opacity: 0;
-  font-size: 1.2rem;
+  font-size: var(--onetwo-rem);
   transition: 200ms ease-in-out;
 }
 .call-us button:hover {
@@ -1223,12 +1230,12 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   opacity: 1;
 }
 .call-us .icon {
-  font-size: 1.5rem;
+  font-size: var(--onefive-rem);
 }
 .case-study__details {
   width: min(97%, 1100px);
   margin: auto;
-  margin-top: 5rem;
+  margin-top: var(--five-rem);
   margin-bottom: 5rem;
   padding-top: 7rem;
 }
@@ -1247,7 +1254,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   background: var(--secondary-black);
   padding: 0.8rem 1.8rem;
   border-radius: 2rem;
-  font-size: 0.85rem;
+  font-size: var(--pointfive-rem);
   font-weight: 600;
   width: max-content;
   margin: auto;
@@ -1263,7 +1270,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 }
 .details__problem,
 .details__date {
-  font-size: 1.3rem;
+  font-size: var(--onetwo-rem);
   color: var(--primary-grey);
   margin-bottom: 1rem;
   line-height: 1.5;
@@ -1277,13 +1284,13 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   line-height: 1.5;
 }
 .case-txt {
-  font-size: 1.2rem;
+  font-size: var(--onetwo-rem);
   color: var(--primary-grey);
   margin-bottom: 1rem;
   line-height: 1.5;
 }
 .case__sub-head {
-  font-size: 2rem;
+  font-size: var(--two-rem);
   font-weight: 600;
   margin-bottom: 1rem;
   line-height: 1.5;
@@ -1299,15 +1306,39 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
     padding-right: 0;
   }
   .navbar__links ul {
-    font-size: 1rem;
+    font-size: var(--one-rem-font);
+  }
+  :root {
+    --onefive-rem: 1.5rem;
+    --onetwo-rem: 1.2rem;
+    --two-rem: 2rem;
+    --threefive-rem: 3rem;
+    --onefour-rem: 1.4rem;
+    --pointfive-rem: 0.85rem;
+    --five-rem: 5rem;
   }
 }
 @media (max-width: 768px) {
-  .navbar__logo img{
+  .home__rating-txt{
+    margin: 0 0 2rem 2rem;
+  }
+  .home__ratings span {
+    margin: 0 0 .8rem 2rem;
+  }
+  .home__cta-btn {
+    margin: 0 0 1rem 2rem;
+  }
+  .home__accent-txt {
+    margin: 0 0 1rem 2rem;
+  }
+  .home__content {
+    text-align: left;
+  }
+  .navbar__logo img {
     width: 2rem;
   }
-  .navbar__logo p{
-    font-size: 1.2rem;
+  .navbar__logo p {
+    font-size: var(--onetwo-rem);
   }
   .navbar__container {
     position: relative;
@@ -1319,7 +1350,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   .navbar__menu .equals {
     display: block;
   }
-  .navbar__menu .times{
+  .navbar__menu .times {
     display: none;
   }
   .navlinks__cont {
@@ -1355,7 +1386,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
     width: 100%;
     padding: 1rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: var(--onetwo-rem);
   }
   .navbar__socials {
     width: 100%;
@@ -1364,12 +1395,17 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   .navbar__menu {
     display: block;
   }
+  :root {
+    --onefive-rem: 1.5rem;
+    --onetwo-rem: 1.2rem;
+    --two-rem: 2rem;
+    --threefive-rem: 2rem;
+    --onefour-rem: 1.2rem;
+    --pointfive-rem: 0.85rem;
+    --five-rem: 2rem;
+  }
 }
 @media (max-width: 480px) {
 }
 /* @container (max-width: 1024px) {
-
 } */
-/* max-width: 370px
-max-width: 500px
-max-width: 700px */
