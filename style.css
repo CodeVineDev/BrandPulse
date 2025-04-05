@@ -856,7 +856,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   margin-block: 5rem;
   background: var(--secondary-black);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
   gap: 2rem;
 }
 .about__accent-txt {
@@ -924,7 +924,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   margin: auto;
   margin-block: 5rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
   gap: 3rem;
 }
 .why-us__left img {
@@ -1326,8 +1326,8 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 }
 @media (max-width: 768px) {
   .testimonial__partners-cont .span-two {
-  grid-column: span 1;
-}
+    grid-column: span 1;
+  }
   html,
   body {
     width: 100%;
