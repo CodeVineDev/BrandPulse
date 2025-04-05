@@ -1320,16 +1320,16 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 }
 @media (max-width: 768px) {
   .home__rating-txt{
-    margin: 0 0 2rem 2rem;
+    margin: 0 0 2rem 5%;
   }
   .home__ratings span {
-    margin: 0 0 .8rem 2rem;
+    margin: 0 0 .8rem 5%;
   }
   .home__cta-btn {
-    margin: 0 0 1rem 2rem;
+    margin: 0 0 1rem 5%;
   }
   .home__accent-txt {
-    margin: 0 0 1rem 2rem;
+    margin: 0 0 1rem 5%;
   }
   .home__content {
     text-align: left;
