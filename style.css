@@ -1303,6 +1303,12 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   }
 }
 @media (max-width: 768px) {
+  .navbar__logo img{
+    width: 2rem;
+  }
+  .navbar__logo p{
+    font-size: 1.2rem;
+  }
   .navbar__container {
     position: relative;
     display: flex;
@@ -1323,6 +1329,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
     left: 0;
     flex-direction: column;
     background-color: var(--primary-black);
+    border-bottom: var(--grey-border);
     overflow: hidden;
     padding: 0;
     height: 0;
