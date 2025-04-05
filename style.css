@@ -1325,6 +1325,11 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   }
 }
 @media (max-width: 768px) {
+  html,body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
   .home__rating-txt{
     margin: 0 0 2rem 5%;
   }
