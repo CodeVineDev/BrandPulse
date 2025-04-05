@@ -222,7 +222,7 @@ body {
 }
 .home__proof-cont {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
   gap: 2rem;
   width: min(90%, 800px);
   margin: auto;
@@ -386,7 +386,7 @@ body {
 }
 .service__content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
   gap: 2rem;
 }
 .service__box {
@@ -450,7 +450,7 @@ body {
 }
 .process__content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
   gap: 2rem;
   width: var(--width-1200px);
   margin: auto;
@@ -528,7 +528,7 @@ body {
 }
 .case-study__content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 2rem;
   width: var(--width-1200px);
   margin: auto;
@@ -653,7 +653,7 @@ body {
 }
 .testimonial__partners-cont {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 1rem;
   margin-bottom: 3rem;
 }
@@ -1325,16 +1325,20 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   }
 }
 @media (max-width: 768px) {
-  html,body {
+  .testimonial__partners-cont .span-two {
+  grid-column: span 1;
+}
+  html,
+  body {
     width: 100%;
     overflow-x: hidden;
   }
-  
-  .home__rating-txt{
+
+  .home__rating-txt {
     margin: 0 0 2rem 5%;
   }
   .home__ratings span {
-    margin: 0 0 .8rem 5%;
+    margin: 0 0 0.8rem 5%;
   }
   .home__cta-btn {
     margin: 0 0 1rem 5%;
