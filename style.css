@@ -1057,7 +1057,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   width: var(--width-1200px);
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
   gap: 2rem;
   margin-top: var(--five-rem);
 }
@@ -1145,7 +1145,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 }
 .contact__reach-out {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
   gap: 1.5rem;
   width: var(--width-1200px);
   margin: auto;
