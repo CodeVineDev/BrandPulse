@@ -22,7 +22,7 @@
   --transition: 400ms ease-in;
   --one-rem-font: 1rem;
   --neon-border: 0.1px solid var(--primary-neon);
-  --grey-border: 0.1px solid rgb(29, 29, 29);
+  --grey-border: 0.1px solid rgb(52, 52, 52);
 }
 
 html {
@@ -172,6 +172,7 @@ body {
   margin: auto;
   margin-bottom: 1rem;
   line-height: 1.2;
+  text-wrap: balance;
 }
 
 .home__sub-header {
@@ -1344,7 +1345,6 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   }
   .home__cta-btn { 
     width: var(--width-1200px);
-    margin: auto;
     margin: 0 0 1rem 0; 
   }
   .home__accent-txt {
@@ -1419,7 +1419,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
     --onefive-rem: 1.2rem;
     --onetwo-rem: 1rem;
     --two-rem: 1.5rem;
-    --threefive-rem: 2rem;
+    --threefive-rem: 2.5rem;
     --onefour-rem: 1rem;
     --pointfive-rem: 0.85rem;
     --five-rem: 2rem;
