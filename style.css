@@ -189,6 +189,8 @@ body {
   padding: 1rem 2rem;
   border-radius: 2rem;
   border: none;
+  width: max-content;
+  margin: auto;
   transition: 200ms ease-out;
   margin-bottom: 3rem;
 }
@@ -1344,7 +1346,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
     margin: 0 0 0.8rem 0;
   }
   .home__cta-btn { 
-    width: var(--width-1200px);
+    width: 100%;
     margin: 0 0 1rem 0; 
   }
   .home__accent-txt {
@@ -1419,7 +1421,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
     --onefive-rem: 1.2rem;
     --onetwo-rem: 1rem;
     --two-rem: 1.5rem;
-    --threefive-rem: 2.5rem;
+    --threefive-rem: 2.2rem;
     --onefour-rem: 1rem;
     --pointfive-rem: 0.85rem;
     --five-rem: 2rem;
