@@ -26,7 +26,6 @@
 
 html {
   width: 100%;
-  /* overflow-x: hidden; */
 }
 
 *,
@@ -1412,11 +1411,11 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
     display: block;
   }
   :root {
-    --onefive-rem: 1.5rem;
-    --onetwo-rem: 1.2rem;
-    --two-rem: 2rem;
+    --onefive-rem: 1.2rem;
+    --onetwo-rem: 1rem;
+    --two-rem: 1.5rem;
     --threefive-rem: 2rem;
-    --onefour-rem: 1.2rem;
+    --onefour-rem: 1rem;
     --pointfive-rem: 0.85rem;
     --five-rem: 2rem;
   }
