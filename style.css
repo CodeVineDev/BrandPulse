@@ -26,7 +26,7 @@
 
 html {
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 *,
@@ -36,6 +36,7 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background: var(--primary-black);
   color: var(--primary-white);
@@ -1328,11 +1329,11 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   .testimonial__partners-cont .span-two {
     grid-column: span 1;
   }
-  html,
+  /* html,
   body {
     width: 100%;
     overflow-x: hidden;
-  }
+  } */
 
   .home__rating-txt {
     margin: 0 0 2rem 5%;
