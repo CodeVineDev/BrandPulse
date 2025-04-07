@@ -562,8 +562,8 @@ body {
   border: var(--neon-border);
 }
 .case-study__card .date {
-  display: flex;
-  justify-content: start;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 1fr));
   gap: 2rem;
   align-items: center;
   margin-bottom: 1rem;
@@ -1338,11 +1338,11 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   }
 }
 @media (max-width: 768px) {
+#testimonialSlider .testimonial__slide {
+  width: min(90%, 300px);
+}
   .cta_box button {
     width: 100%;
-  }
-  .cta_box {
-    text-align: left;
   }
   .cta_box img{
   display: none;
