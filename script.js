@@ -87,10 +87,14 @@ n.addEventListener("click", () => {
   (o.style.display = e ? "none" : "block"),
     (s.style.display = e ? "block" : "none");
 }),
-  window.addEventListener("load", () => {
-    const e = document.getElementById("preloader");
-    e.classList.add("fade-out"),
+  window.addEventListener("DOMContentLoaded", () => {
+    const intro = document.getElementById("intro-animation");
+
+    setTimeout(() => {
+      intro.classList.add("fade-out");
+
       setTimeout(() => {
-        e.style.display = "none";
-      }, 700);
+        intro.style.display = "none";
+      }, 1000); // after fade
+    }, 1000); // how long the animation shows (2.5s)
   });
