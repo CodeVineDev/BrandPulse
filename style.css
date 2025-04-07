@@ -1101,8 +1101,6 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 }
 
 .contact__form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -1111,14 +1109,18 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   gap: 0.4rem;
   flex-direction: column;
 }
-.contact__form div:nth-child(3) {
+/* .contact__form div:nth-child(3) {
   color: var(--primary-grey);
   grid-column: span 2;
-}
+} */
 .contact__form label {
   color: var(--primary-grey);
   font-size: var(--one-rem-font);
   padding-left: 0.3rem;
+}
+.contact__form .input-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
 }
 .contact__form input {
   width: 100%;
@@ -1127,6 +1129,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   outline: none;
   padding: 1rem;
   border-radius: 0.7rem;
+  margin-bottom: 1rem;
 }
 .contact__form :where(input, textarea):focus {
   border: var(--neon-border);
@@ -1144,9 +1147,10 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   height: 9rem;
   padding: 1rem;
   resize: none;
+  margin-bottom: 1rem;
 }
 .contact__form button {
-  grid-column: span 2;
+  width: 100%;
   background: var(--primary-neon);
   color: var(--secondary-black);
   font-weight: 600;
@@ -1157,12 +1161,10 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 }
 .contact__right iframe {
   height: 100%;
+  width: 100%;
   border-radius: 1rem;
 }
 .contact__reach-out {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
-  gap: 1.5rem;
   width: var(--width-1200px);
   margin: auto;
   margin-top: 9rem;
@@ -1179,10 +1181,11 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   font-weight: 600;
 }
 .contact__reach-out .box {
+  place-content: center;
   border: var(--grey-border);
   background: var(--secondary-black);
   border-radius: 1rem;
-  padding: 2rem 2rem 3rem 2rem;
+  padding: 2rem;
   transition: 200ms ease-out;
 }
 .reach-out__social:hover {
@@ -1191,10 +1194,15 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 .contact__reach-out .box:hover {
   border: var(--neon-border);
 }
+.reach-out-box{
+ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 .call-us {
-  grid-column: span 3;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
   gap: 2rem;
 }
 .call-us h4 {
@@ -1227,7 +1235,6 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 .call-us a {
   text-decoration: none;
   font-size: var(--onetwo-rem);
-  background: var(--secondary-black);
   z-index: 1;
   color: var(--primary-white);
   font-weight: 600;

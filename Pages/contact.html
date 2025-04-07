@@ -81,14 +81,17 @@
                         Your input is important to us, and we look forward to connecting with you!
                     </p>
                     <div class="contact__form">
-                        <div>
-                            <label for="name">Name</label>
-                            <input type="text" placeholder="Jane Smith">
+                        <div class="input-div">
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" placeholder="Jane Smith">
+                            </div>
+                            <div>
+                                <label for="name">Email</label>
+                                <input type="email" placeholder="Jane@BrandPulse.com">
+                            </div>
                         </div>
-                        <div>
-                            <label for="name">Email</label>
-                            <input type="email" placeholder="Jane@BrandPulse.com">
-                        </div>
+
                         <div>
                             <label for="massage">Message</label>
                             <textarea name="message" id="msg" placeholder="Hi!"></textarea>
@@ -107,18 +110,21 @@
         <!-- REACH OUT START -->
         <section>
             <div class="contact__reach-out">
-                <div class="reach-out__social" data-aos="fade-up">
-                    <iconify-icon icon="bi:linkedin"></iconify-icon>
-                    <P>linkedIn</P>
+                <div class="reach-out-box">
+                    <div class="reach-out__social" data-aos="fade-up">
+                        <iconify-icon icon="bi:linkedin"></iconify-icon>
+                        <P>linkedIn</P>
+                    </div>
+                    <div class="reach-out__social" data-aos="fade-up" data-aos-delay="100">
+                        <iconify-icon icon="fa6-brands:square-x-twitter"></iconify-icon>
+                        <p>X (Twitter)</p>
+                    </div>
+                    <div class="reach-out__social" data-aos="fade-up" data-aos-delay="200">
+                        <iconify-icon icon="fa:github-square"></iconify-icon>
+                        <p>Github</p>
+                    </div>
                 </div>
-                <div class="reach-out__social" data-aos="fade-up" data-aos-delay="100">
-                    <iconify-icon icon="fa6-brands:square-x-twitter"></iconify-icon>
-                    <p>X (Twitter)</p>
-                </div>
-                <div class="reach-out__social" data-aos="fade-up" data-aos-delay="200">
-                    <iconify-icon icon="fa:github-square"></iconify-icon>
-                    <p>Github</p>
-                </div>
+
                 <div class="call-us">
                     <div class="box" data-aos="fade-up">
                         <h4><iconify-icon icon="ph:users-fill"></iconify-icon>Sales</h4>
@@ -126,7 +132,6 @@
                         <button>
                             <a href="#">Talk to Us<iconify-icon class="icon" icon="ep:top-right"></iconify-icon></a>
                         </button>
-
                     </div>
                     <div class="box" data-aos="fade-up" data-aos-delay="100">
                         <h4><iconify-icon icon="fluent:call-12-filled"></iconify-icon>Call Us</h4>
