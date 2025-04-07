@@ -764,7 +764,7 @@ body {
   text-align: center;
   width: var(--width-850);
   margin: auto;
-  padding: var(--five-rem);
+  padding: var(--threefive-rem);
   border-radius: 2rem;
   background: var(--secondary-black);
 }
