@@ -93,9 +93,9 @@ n.addEventListener("click", () => {
       e.classList.add("fade-out"),
         setTimeout(() => {
           e.style.display = "none";
-        }, 300);
-    }, 500),
+        }, 100);
+    }, 200),
       setTimeout(() => {
         e.style.display = "none";
-      }, 3e3);
+      }, 3000);
   });
