@@ -13,6 +13,8 @@
   --onefive-rem: 1.5rem;
   --onetwo-rem: 1.2rem;
   --two-rem: 2rem;
+  --fivefive-rem: 5.5rem;
+  --seven-rem: 7rem;
   --threefive-rem: 3.5rem;
   --onefour-rem: 1.4rem;
   --pointfive-rem: 0.85rem;
@@ -849,20 +851,20 @@ body {
 body :where(.about__home-cont, .work__home-cont, .contact__home-cont) {
   width: min(90%, 750px);
   margin: auto;
-  margin-top: 5.5rem;
+  margin-top: var(--fivefive-rem);
   background: var(--primary-neon);
-  padding: 7rem;
+  padding: var(--seven-rem);
   text-align: center;
   border-radius: 1.5rem;
 }
 body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   color: var(--secondary-black);
-  font-size: 3rem;
+  font-size: var(--threefive-rem);
 }
 .about__about-us {
   border-radius: 1.5rem;
-  padding: 3rem;
-  width: min(97%, 1100px);
+  padding: var(--two-rem);
+  width: min(95%, 1100px);
   margin: auto;
   margin-block: 5rem;
   background: var(--secondary-black);
@@ -910,6 +912,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 .about__us-left button {
   background: var(--primary-neon);
   padding: 1rem 1.5rem;
+  width: max-content;
   border-radius: 3rem;
   border: none;
   transition: 200ms ease-out;
@@ -931,12 +934,15 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 }
 .about__why-us {
   border-radius: 1.5rem;
-  width: min(97%, 1100px);
+  width: min(90%, 1100px);
   margin: auto;
-  margin-block: 5rem;
+  margin-block: var(--five-rem);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
-  gap: 3rem;
+  gap: var(--two-rem);
+}
+.why-us__left {
+  height: max-content;
 }
 .why-us__left img {
   width: 100%;
@@ -980,7 +986,6 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 .why-us__left a {
   text-decoration: none;
   font-size: var(--onefive-rem);
-  background: var(--secondary-black);
   z-index: 1;
   color: var(--primary-white);
   font-weight: 600;
@@ -1313,7 +1318,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 }
 
 @media (max-width: 1024px) {
-.case-study__card .date {
+  .case-study__card .date {
     gap: 1rem;
     justify-content: center;
   }
@@ -1346,6 +1351,9 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   }
 }
 @media (max-width: 768px) {
+  .about__us-left button {
+    width: 100%;
+  }
   .cta_box img {
     display: none;
   }
@@ -1365,7 +1373,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   .home__accent-txt {
     margin: 0 0 1rem 0;
   }
- .home__content {
+  .home__content {
     text-align: left;
     padding: 2rem;
   }
@@ -1438,6 +1446,8 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
     --pointfive-rem: 0.85rem;
     --five-rem: 3.5rem;
     --twofive-rem: 2rem;
+    --fivefive-rem: 5rem;
+    --seven-rem: 5rem;
   }
 }
 @media (max-width: 480px) {
@@ -1450,7 +1460,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   .service__head-cont .learn-more {
     padding: 0.8rem;
   }
-  
+
   .process__box {
     text-align: center;
   }
