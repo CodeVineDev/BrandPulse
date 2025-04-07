@@ -13,6 +13,7 @@
   --onefive-rem: 1.5rem;
   --onetwo-rem: 1.2rem;
   --two-rem: 2rem;
+  --three-rem: 3rem;
   --fivefive-rem: 5.5rem;
   --seven-rem: 7rem;
   --threefive-rem: 3.5rem;
@@ -1262,7 +1263,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   font-size: var(--onefive-rem);
 }
 .case-study__details {
-  width: min(97%, 1100px);
+  width: min(90%, 1100px);
   margin: auto;
   margin-top: var(--five-rem);
   margin-bottom: 5rem;
@@ -1291,7 +1292,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   border: var(--grey-border);
 }
 .details__header {
-  font-size: 3rem;
+  font-size: var(--three-rem);
   font-weight: 600;
   margin-bottom: 1rem;
   line-height: 1.5;
@@ -1306,7 +1307,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   text-align: center;
 }
 .case__header {
-  font-size: 3rem;
+  font-size: var(--three-rem);
   font-weight: 600;
   margin-bottom: 1rem;
   line-height: 1.5;
@@ -1455,6 +1456,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
     --twofive-rem: 2rem;
     --fivefive-rem: 5rem;
     --seven-rem: 5rem;
+    --three-rem: 2rem;
   }
 }
 @media (max-width: 480px) {
