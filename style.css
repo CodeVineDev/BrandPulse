@@ -8,7 +8,8 @@
   --primary-black: #070707;
   --primary-black-blur: #0a0a0a80;
   --secondary-black: #111111;
-  --width-850: min(100%, 850px);
+  --width-600: min(100%, 600px);
+  --width-850: min(90%, 850px);
   --onefive-rem: 1.5rem;
   --onetwo-rem: 1.2rem;
   --two-rem: 2rem;
@@ -169,7 +170,7 @@ body {
 .home__header {
   font-size: var(--threefive-rem);
   font-weight: 600;
-  width: var(--width-850);
+  width: min(100%, 850px);
   margin: auto;
   margin-bottom: 1rem;
   line-height: 1.2;
@@ -179,7 +180,7 @@ body {
 .home__sub-header {
   font-size: var(--onefour-rem);
   color: var(--primary-white);
-  width: var(--width-850);
+  width: min(100%, 850px);
   margin: auto;
   margin-bottom: var(--threefive-rem);
   line-height: 1.5;
@@ -386,7 +387,7 @@ body {
 .service__sub-txt {
   font-size: var(--one-rem-font);
   color: var(--primary-grey);
-  width: min(90%, 600px);
+  width: var(--width-600);
   margin-bottom: 4rem;
   line-height: 1.5;
 }
@@ -450,7 +451,7 @@ body {
   font-size: var(--one-rem-font);
   text-align: center;
   color: var(--primary-grey);
-  width: min(90%, 550px);
+  width: var(--width-600);
   margin: auto;
   margin-bottom: 4rem;
   line-height: 1.5;
@@ -499,6 +500,7 @@ body {
 .process__box p {
   color: var(--primary-grey);
   line-height: 1.5;
+  
   font-size: var(--one-rem-font);
 }
 .case-study__cont {
@@ -529,7 +531,7 @@ body {
   font-size: var(--one-rem-font);
   text-align: center;
   color: var(--primary-grey);
-  width: min(90%, 550px);
+  width: var(--width-600);
   margin: auto;
   margin-bottom: 4rem;
   line-height: 1.5;
@@ -649,7 +651,7 @@ body {
   font-size: var(--one-rem-font);
   text-align: center;
   color: var(--primary-grey);
-  width: min(90%, 550px);
+  width: var(--width-600);
   margin: auto;
   margin-bottom: 4rem;
   line-height: 1.5;
@@ -760,7 +762,7 @@ body {
   text-align: center;
   width: var(--width-850);
   margin: auto;
-  padding: 5rem;
+  padding: var(--five-rem);
   border-radius: 2rem;
   background: var(--secondary-black);
 }
@@ -1337,6 +1339,34 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   }
 }
 @media (max-width: 768px) {
+  .cta_box img{
+    width: 3rem;
+    right: 3rem;
+    bottom: 4rem;
+  }
+  .service__head-cont .learn-more {
+    padding: 0.8rem;
+  }
+  .case-study__card .date {
+    gap: 1rem;
+    justify-content: center;
+  }
+  .case-study__card .date p {
+    padding: 1rem;
+  }
+  .case-study__card {
+    text-align: center;
+  }
+  .process__box {
+    text-align: center;
+  }
+  .process__box-icon {
+    margin-bottom: 1.2rem;
+    margin: auto;
+  }
+  .process__box h4 {
+    margin: 1rem 0;
+  }
   .testimonial__partners-cont .span-two {
     grid-column: span 1;
   }
