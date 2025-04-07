@@ -1415,9 +1415,6 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
  }
 }
 @media (max-width: 480px) {
-  :root {
-    --onetwo-rem: .8rem;
-}
   #testimonialSlider .testimonial__slide {
       width: min(90%, 300px);
  }
