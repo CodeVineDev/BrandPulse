@@ -775,7 +775,7 @@ body {
   line-height: 1.5;
   font-size: var(--onetwo-rem);
   color: var(--primary-grey);
-  width: min(90%, 500px);
+  width: min(100%, 500px);
   margin: auto;
   margin-bottom: 2rem;
 }
@@ -814,7 +814,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 2rem 2rem 8rem 2rem;
+  padding: 0 0 8rem 0;
   border-bottom: var(--grey-border);
 }
 .footer__box {
@@ -1339,6 +1339,9 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   }
 }
 @media (max-width: 768px) {
+  .cta_box {
+    text-align: left;
+  }
   .cta_box img{
     width: 3rem;
     right: 3rem;
