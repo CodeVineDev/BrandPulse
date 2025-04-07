@@ -87,3 +87,7 @@ l.addEventListener("click", () => {
   (o.style.display = e ? "none" : "block"),
     (s.style.display = e ? "block" : "none");
 });
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+  preloader.style.display = "none";
+});
