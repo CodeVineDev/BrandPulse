@@ -222,7 +222,7 @@ body {
 }
 .home__proof-cont {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr));
   gap: 2rem;
   width: min(100%, 800px);
   margin: auto;
@@ -1437,13 +1437,16 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 }
 @container (max-width: 768px) {
   :root {
-      --onefive-rem: 1.2rem;
-      --onetwo-rem: 1rem;
-      --two-rem: 1.5rem;
-      --threefive-rem: 2rem;
-      --onefour-rem: 1rem;
-      --pointfive-rem: 0.85rem;
-      --five-rem: 2rem;
-      --twofive-rem: 2rem;
+    --onefive-rem: 1.2rem;
+    --onetwo-rem: 1rem;
+    --two-rem: 1.5rem;
+    --threefive-rem: 2.2rem;
+    --onefour-rem: 1rem;
+    --pointfive-rem: 0.85rem;
+    --five-rem: 4.5rem;
+    --twofive-rem: 2rem;
+    --fivefive-rem: 5rem;
+    --seven-rem: 5rem;
+    --three-rem: 2rem;
  }
 }
