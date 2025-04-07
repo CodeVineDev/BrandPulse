@@ -174,7 +174,6 @@ body {
   margin: auto;
   margin-bottom: 1rem;
   line-height: 1.2;
-  
 }
 
 .home__sub-header {
@@ -500,7 +499,7 @@ body {
 .process__box p {
   color: var(--primary-grey);
   line-height: 1.5;
-  
+
   font-size: var(--one-rem-font);
 }
 .case-study__cont {
@@ -562,8 +561,8 @@ body {
   border: var(--neon-border);
 }
 .case-study__card .date {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
   gap: 2rem;
   align-items: center;
   margin-bottom: 1rem;
@@ -1293,7 +1292,6 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   margin-bottom: 1rem;
   line-height: 1.5;
   text-align: center;
-  
 }
 .case__header {
   font-size: 3rem;
@@ -1338,14 +1336,14 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   }
 }
 @media (max-width: 768px) {
-#testimonialSlider .testimonial__slide {
-  width: min(90%, 300px);
-}
+  #testimonialSlider .testimonial__slide {
+    width: min(90%, 300px);
+  }
   .cta_box button {
     width: 100%;
   }
-  .cta_box img{
-  display: none;
+  .cta_box img {
+    display: none;
   }
   .service__head-cont .learn-more {
     padding: 0.8rem;
@@ -1379,9 +1377,9 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   .home__ratings span {
     margin: 0 0 0.8rem 0;
   }
-  .home__cta-btn { 
+  .home__cta-btn {
     width: 100%;
-    margin: 0 0 1rem 0; 
+    margin: 0 0 1rem 0;
   }
   .home__accent-txt {
     margin: 0 0 1rem 0;
