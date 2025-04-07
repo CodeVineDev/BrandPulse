@@ -781,6 +781,7 @@ body {
 }
 .cta_box button {
   background: var(--primary-neon);
+  width: max-content;
   padding: 1rem 1.5rem;
   border-radius: 3rem;
   border: none;
@@ -808,17 +809,15 @@ body {
   container-type: inline-size;
 }
 .footer__content {
-  width: var(--width-1200px);
+  width: min(100%, 1200px);
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
   gap: 2rem;
   padding: 0 0 8rem 0;
   border-bottom: var(--grey-border);
 }
 .footer__box {
-  flex: 1;
   padding: 1rem;
 }
 .footer__box h4 {
@@ -1339,13 +1338,14 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   }
 }
 @media (max-width: 768px) {
+  .cta_box button {
+    width: 100%;
+  }
   .cta_box {
     text-align: left;
   }
   .cta_box img{
-    width: 3rem;
-    right: 3rem;
-    bottom: 4rem;
+  display: none;
   }
   .service__head-cont .learn-more {
     padding: 0.8rem;
