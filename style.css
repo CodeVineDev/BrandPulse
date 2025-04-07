@@ -1311,7 +1311,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.6s ease;
+  transition: opacity 0.3s ease;
 }
 
 #intro-animation.fade-out {

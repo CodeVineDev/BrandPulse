@@ -78,23 +78,24 @@ e.forEach((e) => {
     });
   });
 const n = document.getElementById("hamburger"),
-  l = document.getElementById("mobileMenu"),
-  o = document.querySelector(".equals"),
+  o = document.getElementById("mobileMenu"),
+  l = document.querySelector(".equals"),
   s = document.querySelector(".times");
 n.addEventListener("click", () => {
-  l.classList.toggle("open");
-  const e = l.classList.contains("open");
-  (o.style.display = e ? "none" : "block"),
+  o.classList.toggle("open");
+  const e = o.classList.contains("open");
+  (l.style.display = e ? "none" : "block"),
     (s.style.display = e ? "block" : "none");
 }),
-  window.addEventListener("DOMContentLoaded", () => {
-    const intro = document.getElementById("intro-animation");
-
+  (window.onload = () => {
+    const e = document.getElementById("intro-animation");
     setTimeout(() => {
-      intro.classList.add("fade-out");
-
+      e.classList.add("fade-out"),
+        setTimeout(() => {
+          e.style.display = "none";
+        }, 300);
+    }, 500),
       setTimeout(() => {
-        intro.style.display = "none";
-      }, 1000); // after fade
-    }, 1000); // how long the animation shows (2.5s)
+        e.style.display = "none";
+      }, 3e3);
   });
