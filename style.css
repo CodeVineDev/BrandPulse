@@ -41,6 +41,7 @@ body {
   background: var(--primary-black);
   color: var(--primary-white);
   font-family: var(--inter-font);
+  text-wrap: balance;
 }
 
 .navbar__container {
@@ -172,7 +173,7 @@ body {
   margin: auto;
   margin-bottom: 1rem;
   line-height: 1.2;
-  text-wrap: balance;
+  
 }
 
 .home__sub-header {
@@ -463,7 +464,7 @@ body {
 }
 .process__box {
   border-radius: 1.5rem;
-  padding: 3rem 1.5rem;
+  padding: var(--threefive-rem) var(--onefive-rem);
   border: var(--grey-border);
   background: var(--secondary-black);
   transition: var(--transition);
@@ -472,7 +473,7 @@ body {
   border: var(--neon-border);
 }
 .box-cont {
-  width: min(60%, 270px);
+  width: min(100%, 400px);
   margin: auto;
 }
 .process__box-icon {
@@ -1291,7 +1292,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   margin-bottom: 1rem;
   line-height: 1.5;
   text-align: center;
-  text-wrap: balance;
+  
 }
 .case__header {
   font-size: 3rem;
