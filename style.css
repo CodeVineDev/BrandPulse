@@ -392,7 +392,7 @@ body {
 }
 .service__content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 2rem;
 }
 .service__box {
@@ -457,7 +457,7 @@ body {
 }
 .process__content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 2rem;
   width: var(--width-1200px);
   margin: auto;
@@ -537,7 +537,7 @@ body {
 }
 .case-study__content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
   gap: 2rem;
   width: var(--width-1200px);
   margin: auto;
@@ -1313,6 +1313,16 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
 }
 
 @media (max-width: 1024px) {
+.case-study__card .date {
+    gap: 1rem;
+    justify-content: center;
+  }
+  .case-study__card .date p {
+    padding: 1rem;
+  }
+  .case-study__card {
+    text-align: center;
+  }
   .navlinks__cont {
     grid-column: span 3;
     justify-content: space-around;
@@ -1336,37 +1346,8 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   }
 }
 @media (max-width: 768px) {
-  #testimonialSlider .testimonial__slide {
-    width: min(90%, 300px);
-  }
-  .cta_box button {
-    width: 100%;
-  }
   .cta_box img {
     display: none;
-  }
-  .service__head-cont .learn-more {
-    padding: 0.8rem;
-  }
-  .case-study__card .date {
-    gap: 1rem;
-    justify-content: center;
-  }
-  .case-study__card .date p {
-    padding: 1rem;
-  }
-  .case-study__card {
-    text-align: center;
-  }
-  .process__box {
-    text-align: center;
-  }
-  .process__box-icon {
-    margin-bottom: 1.2rem;
-    margin: auto;
-  }
-  .process__box h4 {
-    margin: 1rem 0;
   }
   .testimonial__partners-cont .span-two {
     grid-column: span 1;
@@ -1384,7 +1365,7 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
   .home__accent-txt {
     margin: 0 0 1rem 0;
   }
-  .home__content {
+ .home__content {
     text-align: left;
     padding: 2rem;
   }
@@ -1395,7 +1376,6 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
     font-size: var(--onetwo-rem);
   }
   .navbar__container {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1456,11 +1436,31 @@ body :where(.about__home-cont h1, .work__home-cont h1, .contact__home-cont h1) {
     --threefive-rem: 2.2rem;
     --onefour-rem: 1rem;
     --pointfive-rem: 0.85rem;
-    --five-rem: 2rem;
+    --five-rem: 3.5rem;
     --twofive-rem: 2rem;
   }
 }
 @media (max-width: 480px) {
+  #testimonialSlider .testimonial__slide {
+    width: min(90%, 300px);
+  }
+  .cta_box button {
+    width: 100%;
+  }
+  .service__head-cont .learn-more {
+    padding: 0.8rem;
+  }
+  
+  .process__box {
+    text-align: center;
+  }
+  .process__box-icon {
+    margin-bottom: 1.2rem;
+    margin: auto;
+  }
+  .process__box h4 {
+    margin: 1rem 0;
+  }
 }
 @container (max-width: 768px) {
   :root {
