@@ -776,9 +776,9 @@ body {
 }
 .cta_box img {
   position: absolute;
-  width: 6rem;
-  bottom: 8rem;
-  right: 11rem;
+  width: 4rem;
+  bottom: 20%;
+  right: 20%;
   opacity: 0.8;
 }
 .footer__cont {
