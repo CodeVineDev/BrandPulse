@@ -21,7 +21,7 @@
   --pointfive-rem: 0.85rem;
   --five-rem: 5rem;
   --twofive-rem: 2.5rem;
-  --width-1200px: min(97%, 1200px);
+  --width-1200px: min(90%, 1200px);
   --red-border: 2px solid red;
   --transition: 400ms ease-in;
   --one-rem-font: 1rem;
@@ -225,8 +225,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr));
   gap: 2rem;
-  width: var(--width-1200px);
-  margin: auto;
+  width: 100%;
   margin-bottom: 10rem;
 }
 .home__proof-cont .box {
