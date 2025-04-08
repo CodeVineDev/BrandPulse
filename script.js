@@ -86,16 +86,4 @@ n.addEventListener("click", () => {
   const e = o.classList.contains("open");
   (l.style.display = e ? "none" : "block"),
     (s.style.display = e ? "block" : "none");
-}),
-  (window.onload = () => {
-    const e = document.getElementById("intro-animation");
-    setTimeout(() => {
-      e.classList.add("fade-out"),
-        setTimeout(() => {
-          e.style.display = "none";
-        }, 100);
-    }, 200),
-      setTimeout(() => {
-        e.style.display = "none";
-      }, 3000);
-  });
+})
