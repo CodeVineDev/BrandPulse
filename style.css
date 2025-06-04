@@ -1,5 +1,6 @@
 :root {
   --inter-font: "Inter", sans-serif;
+  --poppin-font: "Poppins", sans-serif;
   --primary-white: #ffffff;
   --primary-grey: #d0d0d0;
   --primary-neon: #daff69;
@@ -43,6 +44,12 @@ body {
   color: var(--primary-white);
   font-family: var(--inter-font);
   text-wrap: balance;
+}
+p{
+  font-family: var(--inter-font);
+}
+h1, h2{
+  font-family: var(--poppin-font);
 }
 .navbar__container {
   container-type: inline-size;
@@ -169,13 +176,14 @@ body {
 .home__header {
   font-size: var(--threefive-rem);
   font-weight: 600;
+  
   width: min(100%, 850px);
   margin: auto;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 .home__sub-header {
-  font-size: var(--onefour-rem);
+  font-size: var(--onetwo-rem);
   color: var(--primary-white);
   width: min(100%, 850px);
   margin: auto;
